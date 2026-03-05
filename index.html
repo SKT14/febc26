@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 class="title">Hello World</h1>
+    <div id="greetings">Home</div>
+    <button id="changebtn">Clcik</button> -->
+    <input type="text" name="" id="todo">
+    <div id="results"></div>
+    <button onclick="addElement()">Add Element</button>
+    
+    <script src="script.js"></script>
+    <script>
+        function addElement(){
+            let inp = document.getElementById("todo").value
+            let newElement = document.createElement("p");
+            newElement.innerHTML = inp;
+            let results = document.getElementById("results");
+            results.appendChild(newElement);
+            document.getElementById("todo").value = "";
+            
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
